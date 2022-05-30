@@ -7,6 +7,7 @@ import {
 	Scripts,
 	ScrollRestoration,
 } from "@remix-run/react"
+import Header from "./components/Header"
 import styles from "./styles/tailwind.css"
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }]
@@ -25,7 +26,10 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
-				<Outlet />
+				<Header />
+				<div className="p-4">
+					<Outlet />
+				</div>
 				<ScrollRestoration />
 				<Scripts />
 				<LiveReload />
