@@ -14,3 +14,8 @@ export async function getPosts({
 	)
 	return await res.json()
 }
+
+export async function getPost({ id }: { id: string }) {
+	const res = await fetch(`${process.env.BACKEND_URL}/posts/${id}`)
+	return await res.json()
+}

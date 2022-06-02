@@ -9,7 +9,7 @@ const PostCard = ({ post }: { post: Post }) => {
 			<h1 className="text-xl font-bold">{post.title}</h1>
 			<span className="text-slate-400">{createdAt}</span>
 			<br />
-			<Link to={`/post/${post.id}`} className="underline">
+			<Link to={`/posts/${post.id}`} className="underline">
 				Read more
 			</Link>
 		</div>
