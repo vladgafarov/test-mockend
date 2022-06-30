@@ -12,6 +12,7 @@ const PostCard = ({ post }: { post: Post }) => {
 			<Link to={`/post/${post.id}`} className="underline">
 				Read more
 			</Link>
+			<h1 className="font-bold">woow</h1>
 		</div>
 	)
 }
